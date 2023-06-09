@@ -1,1 +1,1 @@
-SELECT * FROM users where id = '{{pageParams.user_id}}'
+SELECT * FROM users where id = '{{appsmith.URL.queryParams}}'
