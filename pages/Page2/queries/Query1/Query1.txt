@@ -1,0 +1,5 @@
+SELECT id as id, name as NAME, email as email, vendor_user_id as vendor_id, mobile_number as phone_number 
+FROM users 
+WHERE user_role_id = 1 
+ORDER BY id 
+LIMIT 1000
