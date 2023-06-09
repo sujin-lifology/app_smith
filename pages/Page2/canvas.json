@@ -480,6 +480,15 @@
                                 },
                                 {
                                   "key": "primaryColumns.phone_number.computedValue"
+                                },
+                                {
+                                  "key": "primaryColumns.customColumn1.buttonColor"
+                                },
+                                {
+                                  "key": "primaryColumns.customColumn1.borderRadius"
+                                },
+                                {
+                                  "key": "primaryColumns.customColumn1.boxShadow"
                                 }
                               ],
                               "needsHeightForContent": true,
@@ -518,7 +527,7 @@
                                 }
                               },
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "columnUpdatedAt": 1686216035908,
+                              "columnUpdatedAt": 1686303234378,
                               "primaryColumnId": "id",
                               "defaultSelectedRowIndices": [
                                 0
@@ -531,7 +540,8 @@
                                 "name",
                                 "email",
                                 "vendor_id",
-                                "phone_number"
+                                "phone_number",
+                                "customColumn1"
                               ],
                               "dynamicPropertyPathList": [],
                               "displayName": "Table",
@@ -546,7 +556,11 @@
                               "hideCard": false,
                               "mobileRightColumn": 42,
                               "parentColumnSpace": 10.923828125,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "primaryColumns.customColumn1.onClick"
+                                }
+                              ],
                               "borderWidth": "1",
                               "primaryColumns": {
                                 "id": {
@@ -655,7 +669,7 @@
                                   "fontStyle": "",
                                   "enableFilter": true,
                                   "enableSort": true,
-                                  "isVisible": false,
+                                  "isVisible": true,
                                   "isDisabled": false,
                                   "isCellEditable": false,
                                   "isEditable": false,
@@ -698,6 +712,41 @@
                                   "sticky": "",
                                   "validation": {},
                                   "cellBackground": ""
+                                },
+                                "customColumn1": {
+                                  "allowCellWrapping": false,
+                                  "allowSameOptionsInNewRow": true,
+                                  "index": 8,
+                                  "width": 150,
+                                  "originalId": "customColumn1",
+                                  "id": "customColumn1",
+                                  "alias": "Actions",
+                                  "horizontalAlignment": "LEFT",
+                                  "verticalAlignment": "CENTER",
+                                  "columnType": "button",
+                                  "textSize": "0.875rem",
+                                  "enableFilter": true,
+                                  "enableSort": true,
+                                  "isVisible": true,
+                                  "isDisabled": false,
+                                  "isCellEditable": false,
+                                  "isEditable": false,
+                                  "isCellVisible": true,
+                                  "isDerived": true,
+                                  "label": "Actions",
+                                  "isSaveVisible": true,
+                                  "isDiscardVisible": true,
+                                  "computedValue": "",
+                                  "sticky": "",
+                                  "validation": {},
+                                  "buttonStyle": "rgb(3, 179, 101)",
+                                  "labelColor": "#FFFFFF",
+                                  "buttonColor": "{{table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+                                  "borderRadius": "{{table1.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+                                  "boxShadow": "{{table1.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+                                  "customAlias": "",
+                                  "buttonLabel": "Profile",
+                                  "onClick": "{{navigateTo('Page4', {\n  \"user_id\": \"\"\n}, 'SAME_WINDOW');}}"
                                 }
                               },
                               "key": "nawbehkbug",
